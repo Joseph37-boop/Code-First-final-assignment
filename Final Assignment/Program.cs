@@ -1,5 +1,5 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using System.Data.Entity;
+
 
 public class Student
 {
@@ -24,7 +24,7 @@ class Program
     {
         using (var context = new StudentContext())
         {
-            context.Database.EnsureCreated();
+            //context.Database.EnsureCreated();
 
             var newStudent = new Student
             {
